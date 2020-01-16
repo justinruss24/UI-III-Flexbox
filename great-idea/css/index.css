@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -31,9 +31,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
@@ -64,3 +64,192 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 5% 8%;
+
+}
+header {
+	border-bottom: 1px solid black;
+}
+/*All css on the navigation bar*/
+nav a{
+	color: grey;
+	text-decoration: none;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-container {
+	display: flex;	
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 20%;
+	display: flex;
+}
+/*css on the h1 and header*/
+h1 {
+	font-size: 55px;
+	text-align: center;
+	line-spacing: 2;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5% 0 5% 0;
+}
+.left-info{
+	display: flex;
+	width: 48%;
+	align-items: center;
+	flex-direction: column;
+}
+.right-info{
+	display: flex;
+	width: 48%;
+	justify-content: flex-end;
+
+}
+#right-img {
+	width: 90%;
+}
+
+button {
+	padding: 6px 38px;
+	background-color: none;
+	font-size: 15px;
+	color: black;
+	border-color: black;
+}
+/*CSS on the first section*/
+.sec1-info {
+	width: 49%;
+	line-height: 1.3;
+}
+.sec1-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 4% 0;
+}
+
+/*CSS on the second section*/
+
+.middle-img {
+	width: 100%;
+}
+.sec2-info {
+	width: 32%;
+	line-height: 1.3;
+}
+.sec2-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 4% 0;
+}
+
+/*CSS for the footer*/
+footer h2 {
+	display: flex;
+	margin: 3% 0 1% 0;
+}
+footer p{
+	padding: 1.5% 0;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#copyright {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5%;
+}
+
+/* SERVICES PAGE CSS STARTS HERE*/
+
+/*CSS FOR THE HEADER*/
+.service-header-img {
+	width: 100%;
+	padding-top: 2%;
+}
+
+.service-container {
+	display: flex;
+	margin: 4% 0;
+	padding-bottom: 4%;
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	line-height: 1.3;
+}
+/* CSS FOR CONTENT)*/
+.content {
+	border: 1px solid black;
+	background-color: #f7ede1;
+	width: 48%;
+	margin: 2% 0;
+	padding: 3%;
+	line-height: 1.2;
+}
+
+.content-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2% 0;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding-bottom: 3%;
+}
+
+.learn-btn {
+	border-radius: 6px;
+	margin-top: 5%;
+	font-size: .25rem;
+}
+
+/*CSS FOR BOTTOM/FOOTER CONTENT*/
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	padding: 4% 0;
+	justify-content: space-between;
+}
+
+.left-foot {
+	width: 48%;
+	line-height: 1.2;
+}
+
+.left-foot p{
+	margin-bottom: 4%;
+}
+
+li {
+	margin: 3% 0;
+
+}
+
+.right-foot {
+	width: 48%;
+}
+
+.services-info-img {
+	width: 100%;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	margin: 5% 0 2% 0;
+}
+
