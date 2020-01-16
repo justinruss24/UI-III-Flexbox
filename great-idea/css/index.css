@@ -74,22 +74,24 @@ header {
 }
 /*All css on the navigation bar*/
 nav a{
-	padding: 0 3%;
 	color: grey;
 	text-decoration: none;
-	display: inline-block;
-	margin: 0 1%;
-	border: 1px solid black;
 }
-.nav {
-	width: 100%;
+nav {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	justify-content: space-evenly;
+}
+.nav-container {
+	display: flex;	
+	flex-direction: row;
 	align-items: center;
-	border: 1px solid black;
+	justify-content: space-between;
 }
 .logo {
+	width: 20%;
 	display: flex;
-	justify-content: flex-end;
-	border: 1px solid black;
 }
 /*css on the h1 and header*/
 h1 {
@@ -169,4 +171,20 @@ footer p{
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 5%;
+}
+
+/* SERVICES PAGE CSS STARTS HERE*/
+
+.service-header-img {
+	width: 100%;
+	padding-top: 2%;
+}
+
+.service {
+	display: flex;
+	margin: 4% 0;
+	padding-bottom: 4%;
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	line-height: 1.3;
 }
