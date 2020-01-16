@@ -64,3 +64,109 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 5% 8%;
+
+}
+header {
+	border-bottom: 1px solid black;
+}
+/*All css on the navigation bar*/
+nav a{
+	padding: 0 3%;
+	color: grey;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 1%;
+	border: 1px solid black;
+}
+.nav {
+	width: 100%;
+	align-items: center;
+	border: 1px solid black;
+}
+.logo {
+	display: flex;
+	justify-content: flex-end;
+	border: 1px solid black;
+}
+/*css on the h1 and header*/
+h1 {
+	font-size: 55px;
+	text-align: center;
+	line-spacing: 2;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5% 0 5% 0;
+}
+.left-info{
+	display: flex;
+	width: 48%;
+	align-items: center;
+	flex-direction: column;
+}
+.right-info{
+	display: flex;
+	width: 48%;
+	justify-content: flex-end;
+
+}
+#right-img {
+	width: 90%;
+}
+
+button {
+	padding: 6px 38px;
+	background-color: none;
+	font-size: 15px;
+	color: black;
+	border-color: black;
+}
+/*CSS on the first section*/
+.sec1-info {
+	width: 49%;
+	line-spacing: 1.5;
+}
+.sec1-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 4% 0;
+}
+
+/*CSS on the second section*/
+
+.middle-img {
+	width: 100%;
+}
+.sec2-info {
+	width: 32%;
+}
+.sec2-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 4% 0;
+}
+
+/*CSS for the footer*/
+footer h2 {
+	display: flex;
+	margin: 3% 0 1% 0;
+}
+footer p{
+	padding: 1.5% 0;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#copyright {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5%;
+}
